@@ -63,7 +63,8 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.bu_pnt:
-                if(!pt) {
+                if(!pt)
+                {
                     pt=true;
                     number += ".";
                 }
@@ -85,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
     public void oprartor_event(View view) {
         isnewop=true;
 
+        pt=false;
         oldnum=edt1.getText().toString();
         switch (view.getId())
         {
@@ -143,6 +145,8 @@ public class MainActivity extends AppCompatActivity {
         oldnum="";
         newnum="";
         isnewop=true;
+        pt=false;
+        mins=false;
 
     }
 
