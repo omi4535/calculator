@@ -65,7 +65,7 @@
                 android:layout_width="40pt"
                 android:layout_weight="1"
                 android:textSize="30sp"
-                android:text="=/-"
+                android:text="+/-"
                 android:id="@+id/bu_plus_mins"
                 >
             </android.widget.Button>
@@ -312,18 +312,19 @@
 
             </android.widget.Button>
 
-            <android.widget.Button
+            <com.google.android.material.button.MaterialButton
+                app:cornerRadius="600dp"
                 android:id="@+id/bu_equal"
                 android:layout_width="30pt"
                 android:layout_height="40pt"
                 android:layout_marginRight="1pt"
                 android:layout_weight="1"
-                android:onClick="equal_event"
                 android:backgroundTint="@color/equal"
+                android:onClick="equal_event"
                 android:text="="
                 android:textSize="30dp">
 
-            </android.widget.Button>
+            </com.google.android.material.button.MaterialButton>
         </TableRow>
 
     </TableLayout>
